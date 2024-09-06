@@ -1,109 +1,86 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
 }
 
 .container {
     display: flex;
     max-width: 1200px;
-    margin: 20px auto;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.left-column {
-    width: 35%;
-    background-color: #f3f4f6;
+.sidebar {
+    width: 30%;
     padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
+    border-right: 1px solid #e0e0e0;
 }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
+.profile-picture {
+    width: 100%;
     border-radius: 50%;
-    border: 4px solid white;
     margin-bottom: 20px;
 }
 
-.social-icons a {
-    margin: 0 10px;
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.social-icons img {
+.social-links img {
     width: 30px;
     height: 30px;
 }
 
-.collaborate {
-    font-size: 0.9rem;
-    margin: 20px 0;
-}
-
-.collaborate a {
-    color: #004d99;
-    text-decoration: none;
-}
-
-.cv-btn {
-    background-color: #004d99;
+.cv-button {
+    display: block;
+    background-color: #105262;
     color: white;
-    border: none;
-    padding: 10px 20px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
+    margin-bottom: 20px;
 }
 
-.cv-btn:hover {
-    background-color: #003366;
+.achievement, .hobby, .travel, .interest {
+    margin-bottom: 20px;
 }
 
-.award-section {
-    margin-top: 30px;
-    text-align: left;
-}
-
-.award-img {
-    width: 60px;
+.achievement img, .hobby img, .travel img, .interest img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
     float: left;
-    margin-right: 15px;
 }
 
-.award-section p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-/* Right Column */
-.right-column {
-    width: 65%;
-    padding: 40px;
+main {
+    width: 70%;
+    padding: 20px;
 }
 
 h1 {
-    color: #004d99;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.hashtags {
-    color: #555;
-    margin-bottom: 20px;
-    font-style: italic;
-}
-
-.bio {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
+h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 30px;
 }
 
 a {
-    color: #004d99;
+    color: #0066cc;
     text-decoration: none;
 }
 
@@ -111,21 +88,37 @@ a:hover {
     text-decoration: underline;
 }
 
-h2 {
-    margin-top: 30px;
-    color: #004d99;
-    border-bottom: 2px solid #f3f4f6;
-    padding-bottom: 10px;
+ul {
+    padding-left: 20px;
+}
+
+.publication-years {
     margin-bottom: 20px;
 }
 
-.research-interests {
-    list-style-type: none;
-    padding-left: 0;
-    line-height: 1.8;
+.year-button {
+    background-color: #105262;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
-.research-interests li {
-    font-size: 1rem;
-    margin-bottom: 10px;
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, main {
+        width: 100%;
+    }
 }
